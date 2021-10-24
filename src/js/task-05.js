@@ -4,7 +4,7 @@ span: document.querySelector('#name-output'),
 };
 
 function onInputTypeText (event) {
-  refs.span.textContent = event.currentTarget.value === ' ' ? "Anonymous" : event.currentTarget.value;
+  refs.span.textContent = event.currentTarget.value === '' ? "Anonymous" : event.currentTarget.value;
 };
 
-refs.input.addEventListener('input', onInputTypeText);
+refs.input.addEventListener('input', onInputTypeText)
